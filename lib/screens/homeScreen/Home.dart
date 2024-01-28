@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mester03/uikit/uiColors.dart';
 import 'package:mester03/widgets/CustomProdcuList.dart';
 // import 'package:mester03/widgets/CustomImageLinks.dart';
 import 'package:mester03/widgets/ImageSlider.dart';
@@ -30,34 +31,39 @@ class _HomeState extends State<Home> {
 
           GestureDetector(
             onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => SearchResultPage())),
-            child: Container(
-              // color: Colors.grey,
-              width: double.infinity,
-              height: 50,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Colors.grey[200],
-              ),
-              child: const Padding(
-                padding:  EdgeInsets.all(8.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-
-                  children:  [
-                     Icon(
-                      Icons.search,
-                      color: Colors.grey,
-                      size: 30.0,
-                      textDirection: TextDirection.rtl,
-                    ),
-                     SizedBox(width: 10.0,),
-                     Text("جستجو ...", style: TextStyle(fontFamily: 'IranSans', color: Colors.grey),)
-                  ],
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Container(
+                // color: Colors.grey,
+                width: double.infinity,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.grey[200],
                 ),
+                child: const Padding(
+                  padding:  EdgeInsets.all(2.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+              
+                    children:  [
+                       Icon(
+                        Icons.search,
+                        color: Colors.grey,
+                        size: 30.0,
+                        textDirection: TextDirection.rtl,
+                      ),
+                       SizedBox(width: 10.0,),
+                       Text("جستجو در", style: TextStyle(fontFamily: 'IranSans', color: Colors.grey),),
+                       Text(" مستر", style: TextStyle(fontFamily: 'IranSans', color: Colors.red),)
+              
+                    ],
+                  ),
+                ),
+              
+              
+              
               ),
-
-
-
             ),
           ),
           const SizedBox(height: 20.0,),
