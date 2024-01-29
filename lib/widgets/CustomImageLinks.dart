@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mester03/uikit/uiColors.dart';
 // import 'package:flutter/foundation.dart';
 //
 // class CustomImageLinks extends StatelessWidget {
