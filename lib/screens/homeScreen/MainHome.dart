@@ -22,8 +22,9 @@ class _MainHomeState extends State<MainHome> {
     Categories(),
     Cart(),
     Posts(),
-    Profile(),
     Map(),
+    Profile(),
+
   ];
   void _ontap(int index){
     setState(() {

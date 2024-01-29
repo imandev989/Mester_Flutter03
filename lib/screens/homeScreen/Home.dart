@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:mester03/uikit/uiColors.dart';
-import 'package:mester03/widgets/CustomProdcuList.dart';
+// import 'package:mester03/widgets/CustomProdcuList.dart';
 import 'package:mester03/widgets/CustomImageLinks.dart';
 import 'package:mester03/widgets/ImageSlider.dart';
 import 'package:mester03/widgets/SearchResult.dart';

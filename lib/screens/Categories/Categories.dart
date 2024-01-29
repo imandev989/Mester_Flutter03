@@ -97,14 +97,14 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("رستوران و کافه"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
                   SizedBox(height: 10.0,),
                   Row(
                     children: [
-                      Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
+                      Text("قست فود / کافه / بوفه و سلف و سرویس / بین الملل / ایرانی و سنتی / صبحانه",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
                     ],
                   ),
                   Divider(
@@ -127,14 +127,14 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("تئاتر و هنر "),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
                   SizedBox(height: 10.0,),
                   Row(
                     children: [
-                      Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
+                      Text("تئاتر / کنسرت / سینما / تئاتر کودک و نوجوان ",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
                     ],
                   ),
                   Divider(
@@ -157,14 +157,14 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("پزشکی و سلامت"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
                   SizedBox(height: 10.0,),
                   Row(
                     children: [
-                      Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
+                      Text("مراکز لیزر / ژل و بوتاکس . جوانسازی و اسلیمینگ / ماساژ و آسیا / مراکز لاغری",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
                     ],
                   ),
                   Divider(
@@ -187,7 +187,37 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("فروشگاه اینترنتی"),
+                      const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
+                    ],
+                  ),
+                  SizedBox(height: 10.0,),
+                  Row(
+                    children: [
+                      Text("سوپر مارکت و مواد غذایی / سفر بلیط و هتل",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
+                    ],
+                  ),
+                  Divider(
+                    thickness: 2,
+                    indent: 1,
+                    endIndent: 1,
+                    color: Colors.grey,
+                    height: 20,
+                  ),
+                ],
+              ),
+            ),
+            const Padding(
+              padding: const EdgeInsets.only(left: 6, right: 6),
+              child:  Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      const Text("فروشگاه حضوری"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
@@ -217,7 +247,7 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("تور و سفر"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
@@ -247,7 +277,7 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("زیبایی و آرایش"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
@@ -277,7 +307,7 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("یادگیری و آموزش"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
@@ -307,7 +337,7 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("لوازم و خدمات"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
@@ -337,7 +367,7 @@ class _CategoriesState extends State<Categories> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text("تفریح و ورزش"),
+                      const Text("خوار و بار"),
                       const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
                     ],
                   ),
@@ -357,96 +387,8 @@ class _CategoriesState extends State<Categories> {
                 ],
               ),
             ),
-            const Padding(
-              padding: const EdgeInsets.only(left: 6, right: 6),
-              child:  Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const Text("تفریح و ورزش"),
-                      const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
-                    ],
-                  ),
-                  SizedBox(height: 10.0,),
-                  Row(
-                    children: [
-                      Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
-                    ],
-                  ),
-                  Divider(
-                    thickness: 2,
-                    indent: 1,
-                    endIndent: 1,
-                    color: Colors.grey,
-                    height: 20,
-                  ),
-                ],
-              ),
-            ),
-            const Padding(
-              padding: const EdgeInsets.only(left: 6, right: 6),
-              child:  Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const Text("تفریح و ورزش"),
-                      const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
-                    ],
-                  ),
-                  SizedBox(height: 10.0,),
-                  Row(
-                    children: [
-                      Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
-                    ],
-                  ),
-                  Divider(
-                    thickness: 2,
-                    indent: 1,
-                    endIndent: 1,
-                    color: Colors.grey,
-                    height: 20,
-                  ),
-                ],
-              ),
-            ),
-            const Padding(
-              padding: const EdgeInsets.only(left: 6, right: 6),
-              child:  Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const Text("تفریح و ورزش"),
-                      const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
-                    ],
-                  ),
-                  SizedBox(height: 10.0,),
-                  Row(
-                    children: [
-                      Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
-                    ],
-                  ),
-                  Divider(
-                    thickness: 2,
-                    indent: 1,
-                    endIndent: 1,
-                    color: Colors.grey,
-                    height: 20,
-                  ),
-                ],
-              ),
-            ),
+
+
           ],
         ),
       ],
