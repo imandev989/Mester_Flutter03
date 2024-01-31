@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mester03/screens/Profile/Comments/Comments.dart';
+import 'package:mester03/screens/Profile/Favourite/Favourite.dart';
 import 'package:mester03/screens/Profile/Information/Infotmation.dart';
 import 'package:mester03/screens/Profile/Orders/Orders.dart';
+import 'package:mester03/screens/Profile/Privacy/Privacy.dart';
+import 'package:mester03/screens/Profile/Tickets/Tickets.dart';
 import 'package:mester03/uikit/uiColors.dart';
 
 class Profile extends StatelessWidget {
@@ -157,58 +161,66 @@ class Profile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child:  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                            SizedBox(width: 10.0,),
-                            Text("علاقه مندی ها"),
+                  GestureDetector(
+                    onTap: ()=>Get.to(Favourite()),
 
-                          ],
-                        ),
-
-                        Divider(
-                          thickness: 1,
-                          indent: 1,
-                          endIndent: 1,
-                          color: Colors.grey,
-                          height: 20,
-                        ),
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              SizedBox(width: 10.0,),
+                              Text("علاقه مندی ها"),
+                    
+                            ],
+                          ),
+                    
+                          Divider(
+                            thickness: 1,
+                            indent: 1,
+                            endIndent: 1,
+                            color: Colors.grey,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child:  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                            SizedBox(width: 10.0,),
-                            Text("نظرات"),
+                  GestureDetector(
+                    onTap: ()=>Get.to(Comments()),
 
-                          ],
-                        ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              SizedBox(width: 10.0,),
+                              Text("نظرات"),
 
-                        Divider(
-                          thickness: 1,
-                          indent: 1,
-                          endIndent: 1,
-                          color: Colors.grey,
-                          height: 20,
-                        ),
-                      ],
+                            ],
+                          ),
+
+                          Divider(
+                            thickness: 1,
+                            indent: 1,
+                            endIndent: 1,
+                            color: Colors.grey,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
@@ -238,58 +250,66 @@ class Profile extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child:  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                            SizedBox(width: 10.0,),
-                            Text("حریم شخصی"),
+                  GestureDetector(
+                    onTap: ()=>Get.to(Privacy()),
 
-                          ],
-                        ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              SizedBox(width: 10.0,),
+                              Text("حریم شخصی"),
 
-                        Divider(
-                          thickness: 1,
-                          indent: 1,
-                          endIndent: 1,
-                          color: Colors.grey,
-                          height: 20,
-                        ),
-                      ],
+                            ],
+                          ),
+
+                          Divider(
+                            thickness: 1,
+                            indent: 1,
+                            endIndent: 1,
+                            color: Colors.grey,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child:  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                            SizedBox(width: 10.0,),
-                            Text("تیکت ها"),
+                  GestureDetector(
+                    onTap: ()=>Get.to(Tickets()),
 
-                          ],
-                        ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              SizedBox(width: 10.0,),
+                              Text("تیکت ها"),
 
-                        Divider(
-                          thickness: 1,
-                          indent: 1,
-                          endIndent: 1,
-                          color: Colors.grey,
-                          height: 20,
-                        ),
-                      ],
+                            ],
+                          ),
+
+                          Divider(
+                            thickness: 1,
+                            indent: 1,
+                            endIndent: 1,
+                            color: Colors.grey,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
