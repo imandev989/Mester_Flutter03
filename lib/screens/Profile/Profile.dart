@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:mester03/screens/Profile/Information/Infotmation.dart';
+import 'package:mester03/uikit/uiColors.dart';
 
 class Profile extends StatelessWidget {
-  const Profile({super.key});
+   Profile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +34,22 @@ class Profile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        child: Text("PIC"),
+                        height: 95,
+                        width: 95,
+                        decoration: const BoxDecoration(
+                            // shape: BoxShape.circle,
+                          borderRadius: BorderRadius.all(Radius.circular(40)),
+                          color: UIColor.mainBackColor,
+                        ),
+                        child:  ClipRRect(
+                          borderRadius: BorderRadius.circular(120),
+                          child: Image.asset(
+                            'assets/images/Mester.png',
+                            fit: BoxFit.cover,
+                            width: 120,
+                            height: 120,
+                          ),
+                        ),
                       ),
                       Container(
                         child: Text("ایمان نمازی بایگی"),
@@ -71,7 +89,7 @@ class Profile extends StatelessWidget {
               color: Colors.grey[300],
 
             ),
-            child: const Padding(
+            child:  Padding(
               padding:  EdgeInsets.all(10.0),
               child:  Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -83,15 +101,18 @@ class Profile extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                            SizedBox(width: 10.0,),
-                            Text("اطلاعات شخصی"),
+                        GestureDetector(
+                          onTap: ()=>Get.to(Information()),
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              SizedBox(width: 10.0,),
+                              Text("اطلاعات شخصی"),
 
-                          ],
+                            ],
+                          ),
                         ),
 
                         Divider(

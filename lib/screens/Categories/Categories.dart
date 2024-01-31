@@ -77,7 +77,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                    Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -108,7 +108,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -138,7 +138,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -168,7 +168,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -198,7 +198,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -228,7 +228,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -258,7 +258,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -288,7 +288,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -318,7 +318,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -348,7 +348,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
@@ -378,7 +378,7 @@ class _CategoriesState extends State<Categories> {
                     ],
                   ),
                   Divider(
-                    thickness: 2,
+                    thickness: 1,
                     indent: 1,
                     endIndent: 1,
                     color: Colors.grey,
