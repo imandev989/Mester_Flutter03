@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mester03/screens/Profile/Information/Infotmation.dart';
+import 'package:mester03/screens/Profile/Orders/Orders.dart';
 import 'package:mester03/uikit/uiColors.dart';
 
 class Profile extends StatelessWidget {
@@ -125,31 +126,35 @@ class Profile extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child:  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                             SizedBox(width: 10.0,),
-                             Text("سفارش ها"),
+                  GestureDetector(
+                    onTap: ()=>Get.to(Orders()),
 
-                          ],
-                        ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                               SizedBox(width: 10.0,),
+                               Text("سفارش ها"),
 
-                        Divider(
-                          thickness: 1,
-                          indent: 1,
-                          endIndent: 1,
-                          color: Colors.grey,
-                          height: 20,
-                        ),
-                      ],
+                            ],
+                          ),
+
+                          Divider(
+                            thickness: 1,
+                            indent: 1,
+                            endIndent: 1,
+                            color: Colors.grey,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
