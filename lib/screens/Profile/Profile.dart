@@ -11,7 +11,7 @@ import 'package:mester03/screens/Profile/Wallet/Wallet.dart';
 import 'package:mester03/uikit/uiColors.dart';
 
 class Profile extends StatelessWidget {
-   Profile({super.key});
+   const Profile({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -135,7 +135,7 @@ class Profile extends StatelessWidget {
                   GestureDetector(
                     onTap: ()=>Get.to(Orders()),
 
-                    child: Padding(
+                    child:const  Padding(
                       padding: const EdgeInsets.all(8.0),
                       child:  Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -166,7 +166,7 @@ class Profile extends StatelessWidget {
                   GestureDetector(
                     onTap: ()=>Get.to(Favourite()),
 
-                    child: Padding(
+                    child: const Padding(
                       padding: const EdgeInsets.all(8.0),
                       child:  Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -197,7 +197,7 @@ class Profile extends StatelessWidget {
                   GestureDetector(
                     onTap: ()=>Get.to(Comments()),
 
-                    child: Padding(
+                    child: const Padding(
                       padding: const EdgeInsets.all(8.0),
                       child:  Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -228,7 +228,7 @@ class Profile extends StatelessWidget {
                   GestureDetector(
                     onTap: ()=>Get.to(Wallet()),
 
-                    child: Padding(
+                    child: const Padding(
                       padding: const EdgeInsets.all(8.0),
                       child:  Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -259,7 +259,7 @@ class Profile extends StatelessWidget {
                   GestureDetector(
                     onTap: ()=>Get.to(Privacy()),
 
-                    child: Padding(
+                    child: const Padding(
                       padding: const EdgeInsets.all(8.0),
                       child:  Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -290,7 +290,7 @@ class Profile extends StatelessWidget {
                   GestureDetector(
                     onTap: ()=>Get.to(Tickets()),
 
-                    child: Padding(
+                    child: const Padding(
                       padding: const EdgeInsets.all(8.0),
                       child:  Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -321,7 +321,7 @@ class Profile extends StatelessWidget {
                   GestureDetector(
                     onTap: ()=>Get.to(Complaints()),
 
-                    child: Padding(
+                    child: const Padding(
                       padding: const EdgeInsets.all(8.0),
                       child:  Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -349,7 +349,7 @@ class Profile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: const EdgeInsets.all(8.0),
                     child:  Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
