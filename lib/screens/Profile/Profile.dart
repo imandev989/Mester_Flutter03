@@ -114,7 +114,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.medical_information_rounded, size: 20.0,color: Colors.blueAccent,),
                               SizedBox(width: 10.0,),
                               Text("اطلاعات شخصی"),
 
@@ -145,7 +145,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.shopping_basket, size: 20.0,color: Colors.blueAccent,),
                                SizedBox(width: 10.0,),
                                Text("سفارش ها"),
 
@@ -176,7 +176,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.favorite, size: 20.0,color: Colors.blueAccent,),
                               SizedBox(width: 10.0,),
                               Text("علاقه مندی ها"),
                     
@@ -207,7 +207,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.comment_bank, size: 20.0,color: Colors.blueAccent,),
                               SizedBox(width: 10.0,),
                               Text("نظرات"),
 
@@ -238,7 +238,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.wallet, size: 20.0,color: Colors.blueAccent,),
                               SizedBox(width: 10.0,),
                               Text("کیف پول"),
 
@@ -269,7 +269,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.privacy_tip, size: 20.0,color: Colors.blueAccent,),
                               SizedBox(width: 10.0,),
                               Text("حریم شخصی"),
 
@@ -300,7 +300,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.sticky_note_2, size: 20.0,color: Colors.blueAccent,),
                               SizedBox(width: 10.0,),
                               Text("تیکت ها"),
 
@@ -331,7 +331,7 @@ class Profile extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              Icon(Icons.info, size: 20.0,color: Colors.blueAccent,),
                               SizedBox(width: 10.0,),
                               Text("ثبت شکایات"),
 
@@ -359,7 +359,7 @@ class Profile extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                            Icon(Icons.exit_to_app, size: 20.0,color: Colors.blueAccent,),
                             SizedBox(width: 10.0,),
                             Text("خروج"),
 
