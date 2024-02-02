@@ -6,6 +6,7 @@ import 'package:mester03/screens/Profile/Information/Infotmation.dart';
 import 'package:mester03/screens/Profile/Orders/Orders.dart';
 import 'package:mester03/screens/Profile/Privacy/Privacy.dart';
 import 'package:mester03/screens/Profile/Tickets/Tickets.dart';
+import 'package:mester03/screens/Profile/Wallet/Wallet.dart';
 import 'package:mester03/uikit/uiColors.dart';
 
 class Profile extends StatelessWidget {
@@ -72,8 +73,8 @@ class Profile extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Text("۱۰۰۰ تومان"),
-                          SizedBox(width: 10.0,),
-                          Icon(Icons.add_circle_outline),
+                          SizedBox(width: 5.0,),
+                          Icon(Icons.add_circle_outline, color: Colors.blue,size: 25.0,),
                         ],
                       ),
                     ],
@@ -223,31 +224,35 @@ class Profile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child:  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                            SizedBox(width: 10.0,),
-                            Text("کیف پول"),
+                  GestureDetector(
+                    onTap: ()=>Get.to(Wallet()),
 
-                          ],
-                        ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              SizedBox(width: 10.0,),
+                              Text("کیف پول"),
 
-                        Divider(
-                          thickness: 1,
-                          indent: 1,
-                          endIndent: 1,
-                          color: Colors.grey,
-                          height: 20,
-                        ),
-                      ],
+                            ],
+                          ),
+
+                          Divider(
+                            thickness: 1,
+                            indent: 1,
+                            endIndent: 1,
+                            color: Colors.grey,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   GestureDetector(
