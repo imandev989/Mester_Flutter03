@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mester03/screens/Profile/Comments/Comments.dart';
+import 'package:mester03/screens/Profile/Complaints/Complaints.dart';
 import 'package:mester03/screens/Profile/Favourite/Favourite.dart';
 import 'package:mester03/screens/Profile/Information/Infotmation.dart';
 import 'package:mester03/screens/Profile/Orders/Orders.dart';
@@ -317,31 +318,35 @@ class Profile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child:  Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
-                            SizedBox(width: 10.0,),
-                            Text("ثبت شکایات"),
+                  GestureDetector(
+                    onTap: ()=>Get.to(Complaints()),
 
-                          ],
-                        ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child:  Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(Icons.heart_broken, size: 20.0,color: Colors.blueAccent,),
+                              SizedBox(width: 10.0,),
+                              Text("ثبت شکایات"),
 
-                        Divider(
-                          thickness: 1,
-                          indent: 1,
-                          endIndent: 1,
-                          color: Colors.grey,
-                          height: 20,
-                        ),
-                      ],
+                            ],
+                          ),
+
+                          Divider(
+                            thickness: 1,
+                            indent: 1,
+                            endIndent: 1,
+                            color: Colors.grey,
+                            height: 20,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
