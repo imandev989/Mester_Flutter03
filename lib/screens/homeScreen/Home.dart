@@ -4,8 +4,8 @@ import 'package:mester03/widgets/CustomProdcuList.dart';
 import 'package:mester03/widgets/CustomImageLinks.dart';
 import 'package:mester03/widgets/ImageSlider.dart';
 import 'package:mester03/widgets/SearchResult.dart';
+import 'package:mester03/widgets/Story.dart';
 import 'package:mester03/widgets/WonderfulSuggestion.dart';
-import 'package:mester03/widgets/stories.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -67,9 +67,18 @@ class _HomeState extends State<Home> {
             ),
           ),
           const SizedBox(height: 20.0,),
-          const Stories(),
+           Column(
+             children: [
+               Story(),
+               const Padding(
+                 padding:  EdgeInsets.only(left: 10.0, right: 10.0),
+                 child: Divider(
+                   color: Colors.grey,
+                 ),
+               ),
+             ],
+           ),
           const SizedBox(height: 20.0,),
-
            const ImageSlider(),
           const SizedBox(height: 20.0,),
           CustomImageLinks(images:imageSliderList),
