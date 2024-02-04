@@ -1,31 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:mester03/screens/MesterPosts/PostWidget.dart';
+import 'package:mester03/widgets/Story.dart';
 
 class Posts extends StatelessWidget {
   const Posts({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),  // radius of 10
-
-          border: Border.all(
-              color: Colors.grey
+    return Padding(
+      padding: const EdgeInsets.all(4.0),
+      child: Column(
+        children: [
+          Story(),
+          const Padding(
+            padding:  EdgeInsets.only(left: 10.0, right: 10.0),
+            child: Divider(
+              color: Colors.grey,
+            ),
           ),
-        ),
-        width: double.infinity,
-        height: 750,
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(Icons.post_add, size: 100.0,color: Colors.grey,),
-            SizedBox(height: 10,),
-            Text("مستر هیچی پست ندارد", style: TextStyle(color: Colors.grey),)
-          ],
-        ),
+          SizedBox(
+              height: 600,
+
+              child: PostWidget()),
+        ],
       ),
     );
   }
