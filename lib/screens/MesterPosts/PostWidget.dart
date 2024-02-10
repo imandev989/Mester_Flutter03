@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
 
 class PostWidget extends StatelessWidget {
   const PostWidget({super.key});
@@ -46,14 +46,17 @@ class PostWidget extends StatelessWidget {
                     size: 35,
                   ),
                   Icon(Icons.favorite),
-                  SvgPicture.asset(
-                    'assets/images/MrTabligh.svg',
-                    width: 30,
-                  ),
-                  SvgPicture.asset(
-                    'assets/images/MrTabligh.svg',
-                    width: 30,
-                  ),
+                  // SvgPicture.asset(
+                  //   'assets/images/MrTabligh.svg',
+                  //   width: 30,
+                  // ),
+                  Image.asset('assets/images/Mester.png', width: 30,),
+                  Image.asset('assets/images/Mester.png', width: 30,),
+
+                  // SvgPicture.asset(
+                  //   'assets/images/MrTabligh.svg',
+                  //   width: 30,
+                  // ),
                 ],
               ),
               trailing: Icon(

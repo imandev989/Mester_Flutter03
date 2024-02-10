@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mester03/screens/Categories/CategoryPage.dart';
 import 'package:mester03/widgets/SearchResult.dart';
+import 'package:get/get.dart';
 
 
 class Categories extends StatefulWidget {
@@ -56,34 +58,39 @@ class _CategoriesState extends State<Categories> {
               ),
             ),
             const SizedBox(height: 10,),
-            const Padding(
-              padding: const EdgeInsets.only(left: 6, right: 6),
-              child:  Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      const Text("تفریح و ورزش"),
-                      const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
-                    ],
-                  ),
-                  SizedBox(height: 10.0,),
-                  Row(
-                    children: [
-                      Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
-                    ],
-                  ),
-                   Divider(
-                    thickness: 1,
-                    indent: 1,
-                    endIndent: 1,
-                    color: Colors.grey,
-                    height: 20,
-                  ),
-                ],
+            GestureDetector(
+
+              onTap: () => Get.to(CategoryPage()),
+
+              child: const Padding(
+                padding: const EdgeInsets.only(left: 6, right: 6),
+                child:  Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        const Text("تفریح و ورزش"),
+                        const Icon(Icons.arrow_forward_ios, size: 20.0,color: Colors.grey,),
+                      ],
+                    ),
+                    SizedBox(height: 10.0,),
+                    Row(
+                      children: [
+                        Text("استخر / شهربازی / اتاق فرار / بازی های گروهی / ورزش های هوایی / باشگاه های ورزشی",overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 10.0, color: Colors.grey),),
+                      ],
+                    ),
+                     Divider(
+                      thickness: 1,
+                      indent: 1,
+                      endIndent: 1,
+                      color: Colors.grey,
+                      height: 20,
+                    ),
+                  ],
+                ),
               ),
             ),
             // const SizedBox(height: 20,),
