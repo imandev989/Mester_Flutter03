@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mester03/uikit/uiColors.dart';
 
 import '../../widgets/SearchResult.dart';
 
@@ -121,14 +120,12 @@ class _CategoryPageState extends State<CategoryPage> {
                       borderRadius: const BorderRadius.all(Radius.circular(10))
                   ),
                   child: DefaultTabController(
-                    length: 5,
+                    length: tabs.length,
                     child: Scaffold(
                         body: NestedScrollView(
                           headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
                             return <Widget>[
                               new SliverAppBar(
-
-
                                 floating: true,
                                 bottom: TabBar(
                                   isScrollable: true,
