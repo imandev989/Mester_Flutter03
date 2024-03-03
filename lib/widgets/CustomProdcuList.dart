@@ -78,28 +78,88 @@ class CustomProductList extends StatelessWidget {
                           ),
                           child: Column(
                             children: [
-                              ClipRRect(
-                                borderRadius: const BorderRadius.vertical(
-                                    top: Radius.circular(10)),
-                                child: Image.asset(
-                                  'assets/images/769.jpg',
-                                  height: 110.0,
-                                  width: 240.0,
-                                  fit: BoxFit.fill,
-                                ),
+                              Stack(
+                                children: [
+                                  ClipRRect(
+                                    borderRadius: const BorderRadius.vertical(
+                                        top: Radius.circular(10)),
+                                    child: Image.asset(
+                                      'assets/images/769.jpg',
+                                      height: 110.0,
+                                      width: 240.0,
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    bottom: 0,
+                                    right: 0,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius:const BorderRadius.only(
+                                            topLeft: Radius.circular(5.0),
+                                          ), // radius of 10
+                                          color: Colors.grey.shade200
+                                              .withOpacity(0.9)),
+                                      width: 30,
+                                      height: 20,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    top: 0,
+                                    right: 0,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: const BorderRadius.only(
+                                            bottomLeft:  Radius.circular(5.0),
+                                          ), // radius of 10
+                                          color: Colors.grey.shade200
+                                              .withOpacity(0.9)),
+                                      width: 30,
+                                      height: 20,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    top: 0,
+                                    left: 0,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.only(
+                                            bottomRight: const Radius.circular(5.0),
+                                          ), // radius of 10
+                                          color: Colors.grey.shade200
+                                              .withOpacity(0.9)),
+                                      width: 30,
+                                      height: 20,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    bottom: 0,
+                                    left: 0,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.only(
+                                            topRight: const Radius.circular(5.0),
+                                          ), // radius of 10
+                                          color: Colors.grey.shade200
+                                              .withOpacity(0.9)),
+                                      width: 30,
+                                      height: 20,
+                                    ),
+                                  ),
+                                ],
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: Column(
                                   mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     const Row(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                      MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.end,
+                                      CrossAxisAlignment.end,
                                       children: [
                                         Text(
                                           "استخر های رو باز اکباتان",
@@ -111,13 +171,13 @@ class CustomProductList extends StatelessWidget {
                                     ),
                                     Row(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                      MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment:
-                                          CrossAxisAlignment.end,
+                                      CrossAxisAlignment.end,
                                       children: [
                                         const Row(
                                           mainAxisAlignment:
-                                              MainAxisAlignment.start,
+                                          MainAxisAlignment.start,
                                           children: [
                                             Icon(
                                               Icons.location_city_outlined,
@@ -138,10 +198,10 @@ class CustomProductList extends StatelessWidget {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsets.only(top: 20),
+                                          const EdgeInsets.only(top: 20),
                                           child: Row(
                                             mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                             // crossAxisAlignment: CrossAxisAlignment.center,
 
                                             children: [
@@ -152,7 +212,7 @@ class CustomProductList extends StatelessWidget {
                                                 "مشاهده همه ",
                                                 style: TextStyle(
                                                     color:
-                                                        UIColor.mainBackColor),
+                                                    UIColor.mainBackColor),
                                               ),
                                               GestureDetector(
                                                   onTap: () {},
